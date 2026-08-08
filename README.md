@@ -1,0 +1,2 @@
+# mindmap
+Distributable Mindmap Editor
