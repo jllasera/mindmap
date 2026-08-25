@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Thick, High-Contrast Connection Lines scaled to container edges -->
+  <g fill="none" stroke="#1E293B" stroke-linecap="round" stroke-width="56">
+    <!-- Center to Top-Right -->
+    <path d="M 256 256 L 426 86" />
+    
+    <!-- Center to Bottom-Right -->
+    <path d="M 256 256 L 426 426" />
+    
+    <!-- Center to Far Left -->
+    <path d="M 256 256 L 86 256" />
+  </g>
+
+  <!-- Central Core Node -->
+  <circle cx="256" cy="256" r="76" fill="#1E293B" />
+
+  <!-- Outer Main Nodes pushed right to the edges with zero unnecessary padding -->
+  <circle cx="86" cy="256" r="56" fill="#1E293B" />
+  <circle cx="426" cy="86" r="56" fill="#1E293B" />
+  <circle cx="426" cy="426" r="56" fill="#1E293B" />
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Mindmap Node Connections (Lines with Rounded Endcaps) -->
+  <g fill="none" stroke="#1E293B" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center to Top-Right Branch -->
+    <path d="M 256 256 L 350 162" stroke-width="20" />
+    
+    <!-- Center to Bottom-Right Branch -->
+    <path d="M 256 256 L 360 330" stroke-width="20" />
+    
+    <!-- Center to Left Curved Branch -->
+    <path d="M 256 256 C 190 256, 170 190, 150 180" stroke-width="20" />
+    
+    <!-- Secondary Sub-Branch (Top-Right extending further) -->
+    <path d="M 350 162 L 400 130" stroke-width="14" />
+  </g>
+
+  <!-- Central Core / Central Idea Node -->
+  <circle cx="256" cy="256" r="38" fill="#1E293B" />
+
+  <!-- Outer Idea Nodes -->
+  <!-- Main Left Node -->
+  <circle cx="150" cy="180" r="24" fill="#1E293B" />
+  
+  <!-- Main Top-Right Node -->
+  <circle cx="350" cy="162" r="28" fill="#1E293B" />
+  
+  <!-- Main Bottom-Right Node -->
+  <circle cx="360" cy="330" r="26" fill="#1E293B" />
+  
+  <!-- Outer Sub-Node -->
+  <circle cx="400" cy="130" r="16" fill="#1E293B" />
+</svg>

@@ -1,13 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mindmap Pad</title>
-    <script type="module" crossorigin src="./assets/index-x7mloMne.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-P87kJul2.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindmap Pad - Professional Mindmapping for Free</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Left Side -->
+            <div class="flex items-center space-x-4">
+                        <a href="#" class="flex items-center space-x-2">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold shadow-sm">
+                                <img src="images/logo.svg" alt="Logo" class="w-5 h-5">
+                            </div>
+                            <span class="font-bold text-lg text-slate-900">Mindmap Pad</span>
+                        </a>
+                <span class="px-2.5 py-0.5 text-xs font-semibold bg-indigo-50 text-indigo-700 rounded-full border border-indigo-100">Beta</span>
+                <nav class="hidden md:flex items-center space-x-6 ml-6">
+                    <a href="#features" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Features</a>
+                    <a href="#docs" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Documentation</a>
+                </nav>
+            </div>
+            <!-- Right Side -->
+            <div class="flex items-center space-x-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                    <img src="images/github.svg" alt="GitHub" class="w-5 h-5 mr-1.5">
+                    GitHub
+                </a>
+                <a href="./editor/index.html" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-sm transition-all focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    Open Editor
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 sm:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
+                        Professional mindmapping for <span class="text-indigo-600">everyone</span>.
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed">
+                        Mindmap Pad is a fast, feature-rich, and completely private mindmapping tool. Create beautiful diagrams in seconds with zero hassle, no registration required, and complete data ownership.
+                    </p>
+                    <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3 sm:gap-4">
+                        <a href="./editor/index.html" class="inline-flex items-center justify-center px-5 sm:px-6 py-3.5 text-sm sm:text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-md transition-all hover:shadow-lg focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                            Start Editing
+                            <img src="images/arrow-right.svg" alt="" class="ml-2 w-5 h-5 flex-shrink-0">
+                        </a>
+                        <a href="#features" class="inline-flex items-center justify-center px-5 sm:px-6 py-3.5 text-sm sm:text-base font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 rounded-xl shadow-sm transition-all focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                            Explore Features
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:col-span-6">
+                    <div class="relative mx-auto w-full rounded-2xl shadow-xl border border-slate-200/80 bg-white p-2 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-indigo-300 animate-float">
+                        <div class="bg-slate-100 rounded-xl overflow-hidden aspect-[16/10] flex items-center justify-center relative">
+                            <div class="absolute inset-0 bg-gradient-to-br from-indigo-50/50 via-purple-50/30 to-blue-50/50"></div>
+                            <div class="relative z-10 flex flex-col items-center p-6 text-center">
+
+                                    <img src="images/mindmap1.png" alt="" >
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Why choose Mindmap Pad?
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Professional mindmapping for free without privacy compromises. Built for speed, clarity, and ease of use.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6">
+                        <img src="images/lock.svg" alt="" class="w-6 h-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">100% Private</h3>
+                    <p class="text-slate-600 leading-relaxed">Your data stays on your device. No forced cloud sync or tracking of your sensitive brainstorming notes.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6">
+                        <img src="images/lightning.svg" alt="" class="w-6 h-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Lightning Fast</h3>
+                    <p class="text-slate-600 leading-relaxed">Optimized rendering engine ensures buttery smooth panning, zooming, and node creation.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6">
+                        <img src="images/currency.svg" alt="" class="w-6 h-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Completely Free</h3>
+                    <p class="text-slate-600 leading-relaxed">No paywalls, no subscription fees, and no credit card required. Enjoy full professional features for free.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6">
+                        <img src="images/photograph.svg" alt="" class="w-6 h-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Export & Share</h3>
+                    <p class="text-slate-600 leading-relaxed">Easily export your mindmaps to various popular image and data formats to share with your team.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6">
+                        <img src="images/code.svg" alt="" class="w-6 h-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Keyboard Shortcuts</h3>
+                    <p class="text-slate-600 leading-relaxed">Navigate, connect, and structure your ideas at lightning speed using intuitive keyboard commands.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-100 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-6">
+                        <img src="images/collection.svg" alt="" class="w-6 h-6">
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Modern Interface</h3>
+                    <p class="text-slate-600 leading-relaxed">A clean, uncluttered user interface designed to keep you focused entirely on your creative workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-indigo-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.3),transparent_50%)]"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
+                Start creating mindmaps in seconds.
+            </h2>
+            <p class="text-lg text-indigo-200 max-w-2xl mx-auto mb-8">
+                No account required, no credit card. Just open and create.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+                <a href="./editor/index.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-indigo-900 bg-white hover:bg-indigo-50 rounded-xl shadow-lg transition-all focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-900">
+                    Start Editing Now
+                </a>
+                <a href="#docs" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-indigo-800 hover:bg-indigo-700 border border-indigo-700 rounded-xl shadow-sm transition-all focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-900">
+                    Explore Documentation
+                </a>
+            </div>
+            <!-- Version Selection & Launch -->
+            <div class="max-w-md mx-auto bg-indigo-950/40 border border-indigo-700/50 p-4 rounded-2xl backdrop-blur-md shadow-inner flex flex-col sm:flex-row items-center gap-3">
+                <div class="relative w-full flex-1">
+                    <select id="version-select" aria-label="Select version" class="w-full bg-indigo-900/90 text-white text-sm font-medium rounded-xl px-4 py-3 border border-indigo-600/60 focus:outline-none focus:ring-2 focus:ring-indigo-400 appearance-none cursor-pointer">
+                        <option value="0.0.1" selected>v0.0.1 (Latest)</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-indigo-300">
+                        <img src="images/chevron-down.svg" alt="" class="w-4 h-4">
+                    </div>
+                </div>
+                <button onclick="const v = document.getElementById('version-select').value; window.location.href = './editor/'+v+'/index.html';" class="w-full sm:w-auto whitespace-nowrap inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-indigo-900 bg-white hover:bg-indigo-50 rounded-xl shadow transition-all focus:ring-2 focus:ring-white">
+                    Start Editing
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="docs" class="bg-white border-t border-slate-200 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-900 tracking-wider uppercase mb-4">Documentation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Getting Started</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Keyboard Shortcuts</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Exporting Data</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-900 tracking-wider uppercase mb-4">Community</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">GitHub Repository</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Discussions</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Issues</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Contributing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-slate-900 tracking-wider uppercase mb-4">More</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-sm text-slate-600 hover:text-indigo-600 transition-colors">Changelog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs">
+                            <img src="images/logo.svg" alt="" class="w-4 h-4">
+                        </div>
+                        <span class="font-bold text-slate-900">Mindmap Pad</span>
+                    </div>
+                    <p class="text-sm text-slate-500">Professional mindmapping for everyone. Fast, secure, and open source.</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-100 pt-8 text-center">
+                <p class="text-sm text-slate-400">&copy; 2026 Mindmap Pad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
